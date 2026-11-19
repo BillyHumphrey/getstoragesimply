@@ -1,0 +1,33 @@
+{
+  "live": false,
+  "notice": "Affiliate links are not live yet. The slots below are placeholders only. Do not invent tracking URLs.",
+  "programs": [
+    {
+      "id": "sparefoot",
+      "name": "SpareFoot",
+      "network": "FlexOffers",
+      "status": "placeholder",
+      "href": "#affiliate-placeholder-sparefoot",
+      "label": "Compare listings on SpareFoot",
+      "note": "AFFILIATE_PLACEHOLDER: SpareFoot via FlexOffers. Replace href with the approved tracking URL when the program is approved. Do not invent a tracking link."
+    },
+    {
+      "id": "neighbor",
+      "name": "Neighbor",
+      "network": "Neighbor affiliate program",
+      "status": "placeholder",
+      "href": "#affiliate-placeholder-neighbor",
+      "label": "See peer-to-peer space on Neighbor",
+      "note": "AFFILIATE_PLACEHOLDER: Neighbor. Replace href with the approved tracking URL when the program is approved. Do not invent a tracking link."
+    },
+    {
+      "id": "uhaul",
+      "name": "U-Haul",
+      "network": "U-Haul affiliate program",
+      "status": "placeholder",
+      "href": "#affiliate-placeholder-uhaul",
+      "label": "View U-Haul storage",
+      "note": "AFFILIATE_PLACEHOLDER: U-Haul. Replace href with the approved tracking URL when the program is approved. Do not invent a tracking link."
+    }
+  ]
+}

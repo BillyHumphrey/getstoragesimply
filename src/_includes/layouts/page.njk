@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<article class="page wrap prose">
+  <header class="page-head">
+    <p class="kicker">{{ kicker or site.name }}</p>
+    <h1>{{ title }}</h1>
+    {% if dek %}<p class="dek">{{ dek }}</p>{% endif %}
+  </header>
+  {{ content | safe }}
+</article>

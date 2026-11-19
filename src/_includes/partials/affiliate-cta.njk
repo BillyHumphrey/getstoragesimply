@@ -1,0 +1,34 @@
+{# AFFILIATE_PLACEHOLDER block.
+   All hrefs come from src/_data/affiliates.json and are hash placeholders
+   until a real, approved tracking URL is pasted in. Do not invent links. #}
+<aside class="affiliate-box" aria-labelledby="affiliate-heading">
+  <h2 id="affiliate-heading">Compare options</h2>
+  <p>
+    When affiliate programs are approved, links here may earn {{ site.name }} a commission if you rent through them.
+    That does not change the research on this page. See our
+    <a href="/disclosure/">affiliate disclosure</a>.
+  </p>
+  {% if not affiliates.live %}
+  <p class="placeholder-banner" role="status">
+    Affiliate links are placeholders only. They do not go to a tracking URL yet.
+  </p>
+  {% endif %}
+  <ul class="affiliate-actions">
+    {% for program in affiliates.programs %}
+    <li>
+      {# {{ program.note }} #}
+      <a class="btn {% if program.status == 'placeholder' %}btn-placeholder{% endif %}"
+         href="{{ program.href }}"
+         data-affiliate="{{ program.id }}"
+         data-affiliate-network="{{ program.network }}"
+         data-affiliate-status="{{ program.status }}"
+         {% if program.status != 'placeholder' %}rel="nofollow sponsored"{% endif %}>
+        {{ program.label }}
+        {% if program.status == 'placeholder' %}
+        <span class="btn-sub">{{ program.name }} placeholder</span>
+        {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>

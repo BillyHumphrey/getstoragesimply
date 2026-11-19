@@ -1,0 +1,44 @@
+<figure class="table-wrap" aria-labelledby="facility-table-caption">
+  <figcaption id="facility-table-caption" class="table-caption">
+    Climate-controlled storage facilities in or near Lawrenceville, Georgia.
+    Facts below were checked against public operator pages on {{ updated | dateLong }}.
+    We are not publishing dollar amounts because advertised rates change quickly and are often introductory.
+  </figcaption>
+  <div class="table-scroll" tabindex="0">
+    <table class="facility-table">
+      <thead>
+        <tr>
+          <th scope="col">Facility</th>
+          <th scope="col">Address</th>
+          <th scope="col">Climate-controlled units</th>
+          <th scope="col">Rate-lock / increase policy</th>
+          <th scope="col">Vehicle, boat, or RV</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for f in facilities %}
+        {% set op = operators[f.operator] %}
+        <tr>
+          <th scope="row">
+            <a href="{{ f.url }}" rel="noopener noreferrer">{{ f.name }}</a>
+            {% if f.noteLabel %}<span class="pill">{{ f.noteLabel }}</span>{% endif %}
+          </th>
+          <td>{{ f.address }}</td>
+          <td>
+            <strong>{{ f.climate.label }}</strong>
+            {% if f.climate.detail %}<p class="cell-note">{{ f.climate.detail }}</p>{% endif %}
+          </td>
+          <td>
+            <strong>{{ f.ratePolicy.label }}</strong>
+            {% if f.ratePolicy.detail %}<p class="cell-note">{{ f.ratePolicy.detail }}</p>{% endif %}
+          </td>
+          <td>
+            <strong>{{ f.vehicle.label }}</strong>
+            {% if f.vehicle.detail %}<p class="cell-note">{{ f.vehicle.detail }}</p>{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</figure>

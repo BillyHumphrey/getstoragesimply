@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/" aria-label="{{ site.name }} home">
+      <span class="mark" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect x="1.5" y="1.5" width="25" height="25" rx="2" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M6 8.5h16M6 14h16M6 19.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+        </svg>
+      </span>
+      <span class="wordmark-text">
+        <span class="wordmark-the">Get</span>
+        Storage Simply
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+      <a href="/guides/climate-controlled-storage-lawrenceville-ga/" {% if "/guides/" in page.url %}aria-current="page"{% endif %}>Guides</a>
+      <a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a>
+      <a href="/disclosure/" {% if page.url == "/disclosure/" %}aria-current="page"{% endif %}>Disclosures</a>
+    </nav>
+  </div>
+</header>

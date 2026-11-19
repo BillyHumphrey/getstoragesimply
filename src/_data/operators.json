@@ -1,0 +1,103 @@
+{
+  "public-storage": {
+    "name": "Public Storage",
+    "rateLock": "No publicly advertised post-move-in rate lock found as of November 18, 2026.",
+    "rateIncrease": "Leases are month-to-month. Public Storage's pricing FAQ says rates may change and that customers receive at least 30 days' advance notice by email or mail. Its website terms also say a reservation guarantees the advertised price, not the availability of a specific unit, and that pricing is subject to change.",
+    "climateNote": "Climate-controlled units are offered at some locations, not all. Confirm the unit type before you sign.",
+    "sources": [
+      {
+        "title": "How does pricing work with Public Storage?",
+        "url": "https://help.publicstorage.com/rent-a-unit/rental-faqs/zzzz-Understanding_Pricing_and_Rent_Increases",
+        "accessed": "2026-11-18"
+      },
+      {
+        "title": "Public Storage Terms & Conditions",
+        "url": "https://www.publicstorage.com/terms-and-conditions/terms-and-conditions.html",
+        "accessed": "2026-11-18"
+      }
+    ]
+  },
+  "extra-space": {
+    "name": "Extra Space Storage",
+    "rateLock": "No automatic post-move-in rate lock found. Extra Space's public FAQ says the original monthly rate is not guaranteed for the life of the rental, and that prepaying up to six months is offered as a way to lock a rate for that prepaid period. Confirm the current wording with the facility; see the verification note on this page.",
+    "rateIncrease": "Leases are month-to-month. The same FAQ says rates are adjusted from time to time and often increase during peak summer moving season.",
+    "climateNote": "Extra Space's public materials describe climate-controlled units as typically maintained between 55°F and 80°F year-round. That is a typical range, not a lease guarantee unless the contract says so.",
+    "verificationNote": "We could not load Extra Space facility or FAQ pages directly on November 18, 2026, because the site blocked automated requests. Addresses and climate-control flags below come from Extra Space's public Lawrenceville climate-controlled directory as captured in search results that day. Re-open the live pages before you rent.",
+    "sources": [
+      {
+        "title": "Is My Price Guaranteed for As Long As I Rent? (Extra Space FAQ)",
+        "url": "https://www.extraspace.com/self-storage/faq/is-my-price-guaranteed-for-as-long-as-i-rent/",
+        "accessed": "2026-11-18",
+        "note": "Cited from the official URL; the live page was blocked to our crawler."
+      },
+      {
+        "title": "Climate-Controlled Storage in Lawrenceville, GA",
+        "url": "https://www.extraspace.com/storage/facilities/us/georgia/lawrenceville/id/climate-controlled-storage/",
+        "accessed": "2026-11-18",
+        "note": "Cited from the official directory; the live page was blocked to our crawler."
+      }
+    ]
+  },
+  "cubesmart": {
+    "name": "CubeSmart",
+    "rateLock": "No publicly advertised post-move-in rate lock found as of November 18, 2026. CubeSmart's FAQ says storage prices can change daily based on supply and demand, and that a no-commitment reservation guarantees the prices shown on its website.",
+    "rateIncrease": "Leases are month-to-month. CubeSmart's FAQ says the company sends notifications 30 days before any rates change, by mail or certified email.",
+    "climateNote": "CubeSmart's FAQ says the company uses reasonable efforts to keep the building between 55°F and 80°F. 'Reasonable efforts' is not the same as a contractual guarantee.",
+    "sources": [
+      {
+        "title": "CubeSmart Self Storage FAQs",
+        "url": "https://www.cubesmart.com/about-us/frequently-asked-questions/",
+        "accessed": "2026-11-18"
+      }
+    ]
+  },
+  "uhaul": {
+    "name": "U-Haul",
+    "rateLock": "U-Haul advertises a 1-Year Price Lock on base monthly rent for the first 12 months at U-Haul owned-and-managed locations. It applies to new customers and to additional units rented by existing customers. It does not apply to optional add-ons such as SafeStor insurance or late-payment fees, and it does not cover U-Box containers. After 12 months, rent may increase with 30 days' notice by email and letter.",
+    "rateIncrease": "During the first 12 months from the contract start date, U-Haul says the base monthly rental rate will not change, even if you pay month-to-month. After that, increases may occur with 30 days' notice.",
+    "climateNote": "U-Haul's Lawrenceville location pages say climate-controlled storage at those facilities keeps temperatures between 65°F and 85°F year-round, depending on the system.",
+    "sources": [
+      {
+        "title": "U-Haul 1-Year Price Lock",
+        "url": "https://www.uhaul.com/Storage/1-Year-Price-Lock/",
+        "accessed": "2026-11-18"
+      },
+      {
+        "title": "U-Haul Self-Storage FAQs",
+        "url": "https://www.uhaul.com/FrequentlyAskedQuestions/Self-Storage/",
+        "accessed": "2026-11-18"
+      }
+    ]
+  },
+  "space-shop": {
+    "name": "Space Shop Self Storage",
+    "rateLock": "No publicly advertised rate lock found as of November 18, 2026.",
+    "rateIncrease": "The Lawrenceville location page advertises month-to-month leases. We did not find a published statement on how much notice Space Shop gives before a rate increase. Ask before you sign.",
+    "climateNote": "Space Shop's company FAQ says climate-controlled units are typically heated and cooled to around 60°F in winter and 80°F in summer, and tells customers to check with the local facility for details.",
+    "sources": [
+      {
+        "title": "Space Shop Lawrenceville location page",
+        "url": "https://www.spaceshopselfstorage.com/locations/georgia/lawrenceville/space-shop-self-storage-lawrenceville/",
+        "accessed": "2026-11-18"
+      },
+      {
+        "title": "Space Shop FAQs",
+        "url": "https://www.spaceshopselfstorage.com/faqs/",
+        "accessed": "2026-11-18"
+      }
+    ]
+  },
+  "mini-storage-depot": {
+    "name": "Mini Storage Depot",
+    "rateLock": "No publicly advertised rate lock found as of November 18, 2026.",
+    "rateIncrease": "The Lawrenceville location page advertises month-to-month rentals and states that introductory promotional pricing and specials are subject to change and availability, apply to new customers only, and do not apply to protection plans, administrative fees, or other fees. Refer to the rental agreement for details.",
+    "climateNote": "The Lawrenceville location lists temperature-controlled storage among its facility features.",
+    "sources": [
+      {
+        "title": "Mini Storage Depot – Lawrenceville (4025 Sugarloaf Parkway)",
+        "url": "https://www.ministoragedepot.com/storage-locations/ga/lawrenceville/4025-sugarloaf-pkwy/",
+        "accessed": "2026-11-18"
+      }
+    ]
+  }
+}

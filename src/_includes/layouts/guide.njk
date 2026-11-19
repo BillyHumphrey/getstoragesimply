@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+<article class="page wrap guide" itemscope itemtype="https://schema.org/Article">
+  <header class="page-head">
+    <p class="kicker">{{ kicker or "Local guide" }}</p>
+    <h1 itemprop="headline">{{ title }}</h1>
+    {% if dek %}<p class="dek">{{ dek }}</p>{% endif %}
+    <p class="byline">
+      <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">{{ site.author }}</span>
+      </span>
+      <span aria-hidden="true"> · </span>
+      Updated
+      <time itemprop="dateModified" datetime="{{ updated | dateISO }}">{{ updated | dateLong }}</time>
+      <span class="byline-note">America/New_York</span>
+    </p>
+  </header>
+
+  <div class="prose" itemprop="articleBody">
+    {{ content | safe }}
+  </div>
+
+  {% include "partials/affiliate-cta.njk" %}
+</article>

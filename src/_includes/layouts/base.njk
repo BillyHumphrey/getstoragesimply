@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and title != site.name %}{{ title }} — {{ site.name }}{% else %}{{ site.name }} — {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="{{ robots or 'index,follow' }}">
+  <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title or site.name }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% set defaultSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": site.url + "/#organization",
+        "name": site.name,
+        "url": site.url + "/",
+        "description": site.description,
+        "areaServed": site.region,
+        "founder": { "@type": "Person", "name": site.author }
+      },
+      {
+        "@type": "WebSite",
+        "@id": site.url + "/#website",
+        "name": site.name,
+        "url": site.url + "/",
+        "description": site.description,
+        "inLanguage": "en",
+        "publisher": { "@id": site.url + "/#organization" }
+      }
+    ]
+  } %}
+  <script type="application/ld+json">{{ defaultSchema | stringify | safe }}</script>
+  {% if schema %}
+  <script type="application/ld+json">{{ schema | stringify | safe }}</script>
+  {% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  {% include "partials/header.njk" %}
+  <main id="content">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>
